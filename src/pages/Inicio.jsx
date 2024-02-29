@@ -10,7 +10,7 @@ const Inicio = () => {
   const { artistas } = useContext(ObtenerArtistasContext)
 
   return (
-    <div className='w-[90%] md:w-[60%] m-auto' >
+    <div className='w-[90%] md:w-[60%] m-auto'>
       {
         // A continuación vamos a centrar el Titulo Principal y La barra de busqueda cuando los artistas no aparezcan todavía, es decir renderizamos estos dos elementos en el medio de la página. Luego cuando se obtengan los artistas, estos dos elementos se van a desplazar hacia arriba para dar lugar a los resultados gracias a una animación. Para hacer esto vamos a utilizar el hook useContext para obtener el estado de artistas y luego vamos a utilizar un operador ternario para renderizar los elementos en el medio de la página o en la parte superior de la página.
         artistas.length == '' ? (
