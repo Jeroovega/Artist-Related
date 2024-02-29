@@ -1,0 +1,5 @@
+html {
+    background-image: url('./assets/aa.webp');
+    background-blend-mode: screen;
+    background-attachment: fixed;
+}
