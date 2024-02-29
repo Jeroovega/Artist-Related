@@ -6,8 +6,8 @@ import { fileURLToPath } from 'url';
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-const clientId = '';
-const clientSecret = '';
+const clientId = '58cf7eed701340c784b4d47ad2534300';
+const clientSecret = '84b83e7aef9844639c8040b9e301f925';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
