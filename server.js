@@ -1,12 +1,16 @@
 import express from 'express';
 import axios from 'axios';
 import path from 'path'; // Importa el módulo path para manejar rutas de archivos
+import { fileURLToPath } from 'url';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
 const clientId = '58cf7eed701340c784b4d47ad2534300';
 const clientSecret = '84b83e7aef9844639c8040b9e301f925';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.use(express.json());
 
@@ -37,6 +41,7 @@ app.get('/api/search', async (req, res) => {
         res.status(500).json({ message: 'Error al obtener el token de acceso de Spotify' });
     }
 });
+
 
 // Servir archivos estáticos de la carpeta "build" de la aplicación de React
 app.use(express.static(path.join(__dirname, 'build')));
