@@ -44,11 +44,11 @@ app.get('/api/search', async (req, res) => {
 
 
 // Servir archivos estáticos de la carpeta "build" de la aplicación de React
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // Ruta para manejar todas las demás solicitudes, sirviendo el index.html de la aplicación de React
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(PORT, () => {
