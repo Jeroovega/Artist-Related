@@ -31,7 +31,7 @@ const ResultadoRelacionado = () => {
 
             artistsRelated.map((artista, key) => {
 
-              return <div key={key} className="card w-[70%] bg-black/40 shadow-xl flex cursor-default m-auto md:w-72 md:m-0 md:hover:bg-black/50 md:transition-all md: duration-500 ">
+              return <div key={key} className="card w-[70%] bg-black/40 shadow-xl flex cursor-default m-auto md:w-72 md:m-0 md:hover:bg-black/50 md:transition-all md: duration-500 text-white/70 ">
                 <figure className="h-[240px]">
                   <Link to={`/artista-related/${artista.id}`} onClick={() => {
                     window.scrollTo(0, 0)
@@ -43,16 +43,16 @@ const ResultadoRelacionado = () => {
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title cursor-pointer font-Subtitulo border-b-2 pb-2 mb-2 border-white/60">{artista.name}</h2>
-                  <p className="text-sm font-Titulo text-white/70">coincidencia: {artista.popularity}%</p>
+                  <p className="text-sm font-Titulo text-white/90">coincidencia: {artista.popularity}%</p>
                   {/* <p className="text-sm font-Subtitulo">seguidores: {artista.followers.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</p> */}
                   <p className="text-sm font-Subtitulo">generos: {artista.genres ? artista.genres.slice(0, 3).join(' | ') : 'No hay genero'}</p>
                   <div className="card-actions justify-start">
-                    <button className="btn btn-outline  w-full mt-4 font-Subtitulo">
+                    <button className="btn btn-outline  w-full mt-4 font-Subtitulo text-white/70">
                       <Link to={
                         artista.external_urls ? artista.external_urls.spotify : 'https://www.spotify.com'
                       } target={'_blank'}>spotify</Link>
                     </button>
-                    <button className="btn btn-outline  w-full mt-4 font-Subtitulo">
+                    <button className="btn btn-outline  w-full mt-4 font-Subtitulo text-white/70">
                       <Link to={`/artista-related/${artista.id}`} onClick={() => {
                         window.scrollTo(0, 0)
                       }}>canciones populares</Link>

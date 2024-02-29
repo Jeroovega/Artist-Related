@@ -22,7 +22,7 @@ const ObtenerArtistasProvider = ({ children }) => {
 
     // Creo la función para conseguir el id del artista
     const conseguirIDArtista = async () => {
-        if (busqueda.length > 0 && busqueda.length < 30) {
+        if (busqueda.length > 0 && busqueda.length < 30 ) {
             try {
 
                 const res = await fetch(url, {
