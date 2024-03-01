@@ -9,6 +9,5 @@
   background-image: url('/img/aa.webp');
   background-blend-mode: screen;
   background-attachment: fixed;
-  background-size: cover;
   min-height: 100vh;
 }

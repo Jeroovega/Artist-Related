@@ -46,7 +46,7 @@ const Footer = () => {
                             <img src="/img/logo3.png" alt="logo" className="w-14 h-14 m-auto" />
                             <img src="/img/logo4.png" alt="logo" className="w-14 h-14 m-auto" />
                         </div>
-                        <p className='mt-10'>Copyright © 2024 - Derechos reservados por Jerónimo Vega</p>
+                        <p className='mt-10'>Artistas Related - Copyright © 2024 - Derechos reservados por Jerónimo Vega</p>
                         <p>Esta aplicación utiliza la API de Spotify para obtener datos de artistas. Todos los datos son propiedad de Spotify. Consulta los <a href="https://developer.spotify.com/terms/">términos de servicio</a> de Spotify para obtener más información.</p>
                     </aside>
                 </footer> : null

@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className={`navbar z-50 top-0 fixed ${busqueda == '' ? 'text-black/60' : 'bg-[#1d232a] shadow-2xl text-white/60'}`}>
                 <div className="flex-1">
                     <Link onClick={() => { setArtistas(''); setBusqueda(''); }} className={`btn btn-ghost text-xl font-Titulo hover:bg-white/30 `} to='/'>
-                        <img src={`${busqueda == '' ? '/img/logo2.png' : '/img/logo4.png'}`} alt="logo" className="w-8 img-logo" />ARTISTRELATED
+                        <img src={`${busqueda == '' ? '/img/logo2.png' : '/img/logo4.png'}`} alt="logo" className="w-8 img-logo" />ARTISTASRELATED
                     </Link>
                 </div>
                 <div className="flex-none">

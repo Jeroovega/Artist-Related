@@ -5,7 +5,7 @@ const AboutUs = () => {
  // necesito mostrar el footer y el navbar cuando hago click en aboutus
 
   return (
-    <div className='mt-28 mb-12  px-4 xl:px-20'>
+    <div className='pt-28 mb-12  px-4 xl:px-20'>
       <div className="mockup-window border bg-base-300 pb-10">
 
         <div>
