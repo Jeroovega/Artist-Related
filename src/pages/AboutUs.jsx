@@ -46,6 +46,7 @@ const AboutUs = () => {
                   Sección que a raíz de la ID obtenida logra realizar un filtrado de artistas con <span className='text-[#008000]'>géneros similes</span>  al artista principal.
                 </p>
                 <p className='pt-2 font-Subtitulo'>Además, se realiza un posicionamiento de artistas recomendados basado en la <span className='text-[#008000]'>coincidencia</span> con el artista principal.</p>
+                <p className='pt-2 font-Subtitulo'>También se informa el % de <span className='text-[#008000]'>conocimiento</span> mundial que tiene el artista. (utiliza parámetros similares a la popularidad).</p>
                 <p className='pt-2 text-white/'>
                   <span className='text-[#008000]'>*</span> se filtran varios artistas mostrando en pantalla aquellos que tengan mayor exactitud en cuanto a género. se arrojan 20 artistas.
                 </p>

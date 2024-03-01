@@ -43,7 +43,7 @@ const ResultadoRelacionado = () => {
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title cursor-pointer font-Subtitulo border-b-2 pb-2 mb-2 border-white/60">{artista.name}</h2>
-                  <p className="text-sm font-Titulo text-white/90">coincidencia: {artista.popularity}%</p>
+                  <p className="text-sm font-Titulo text-white/90">reconocimiento: {artista.popularity}%</p>
                   {/* <p className="text-sm font-Subtitulo">seguidores: {artista.followers.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</p> */}
                   <p className="text-sm font-Subtitulo">generos: {artista.genres ? artista.genres.slice(0, 3).join(' | ') : 'No hay genero'}</p>
                   <div className="card-actions justify-start">
