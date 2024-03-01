@@ -18,7 +18,7 @@ const Inicio = () => {
             <TituloPrincipal />
             <BarraBusqueda />
           </div>
-        ) : <div className='transition-all translate-y-[-5rem] max-md:translate-y-[5rem] duration-500 mt-12 sm:mt-[-2rem] md:mt-32 '>
+        ) : <div className='transition-all translate-y-[-5rem] max-md:translate-y-[5rem] duration-500 pt-16 sm:pt-[-2rem] md:pt-48 xl:pt-20 '>
           <TituloPrincipal />
           <BarraBusqueda />
           <ResultadoPrincipal />

@@ -7,13 +7,7 @@ import { Rutas } from './routes/Rutas'
 function App() {
 
   return (
-    <div style={
-      {
-        backgroundImage: 'url(/img/a.webp)',
-        backgroundBlendMode: 'screen',
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed'}
-    }>
+    <div className='fondo'>
       <BrowserRouter>
         <Navbar />
         <Rutas />
