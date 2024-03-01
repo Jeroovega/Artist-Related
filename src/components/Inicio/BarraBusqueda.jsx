@@ -9,7 +9,7 @@ const BarraBusqueda = () => {
   // Esto es para obtener los valores del formulario
   const formkit = {
     initialValues: {
-      busqueda: ''
+      busqueda: 'a'
     },
     onChange: (e) => {
       if (e.target.value) {

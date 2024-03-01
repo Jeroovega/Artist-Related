@@ -7,7 +7,7 @@ import { Rutas } from './routes/Rutas'
 function App() {
 
   return (
-    <div className='atr'>
+    <div>
       <BrowserRouter>
         <Navbar />
         <Rutas />
