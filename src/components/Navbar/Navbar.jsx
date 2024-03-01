@@ -14,14 +14,14 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className={`navbar z-50 top-0 fixed ${busqueda == '' ? 'text-black/60' : 'bg-[#1d232a] shadow-2xl text-white/60'}`}>
+            <div className={`navbar z-50 top-0 fixed ${busqueda == '' ? 'text-black/60' : 'bg-[#1d232a] shadow-2xl text-white/60'} md:`}>
                 <div className="flex-1">
                     <Link onClick={() => { setArtistas(''); setBusqueda(''); }} className={`btn btn-ghost text-xl font-Titulo hover:bg-white/30 `} to='/'>
                         <img src={`${busqueda == '' ? '/img/logo2.png' : '/img/logo4.png'}`} alt="logo" className="w-8 img-logo" />ARTISTASRELATED
                     </Link>
                 </div>
                 <div className="flex-none">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 md:text-white/60">
 
                         <li className="max-sm:hidden m-auto hover:bg-white/30 rounded-md"><Link to={'https://www.linkedin.com/in/jeronimo-vega-42375b196/'} target={'_blank'}>
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50"

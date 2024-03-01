@@ -34,9 +34,9 @@ const CardArtista = ({ artista, artistasRelated }) => {
                                 <h2 className="card-title font-Titulo text-4xl justify-center m-auto">{artistasRelated.name}</h2>
                                 <div className="card-actions justify-end">
                                     <div className="flex flex-col m-auto text-center">
-                                        <div className="stat-title whitespace-normal font-Subtitulo ">{artistasRelated.genres ? artistasRelated.genres.join(' | ') : 'No hay genero'}</div>
+                                        <div className="stat-title whitespace-normal font-Subtitulo text-white/60">{artistasRelated.genres ? artistasRelated.genres.join(' | ') : 'No hay genero'}</div>
                                         <div className="stat-value">{artistasRelated.followers ? artistasRelated.followers.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'No poseemos datos...'}</div>
-                                        <div className="stat-desc font-Subtitulo">Total de seguidores</div>
+                                        <div className="stat-desc font-Subtitulo text-white/60">seguidores</div>
                                     </div>
                                 </div>
                             </div>
