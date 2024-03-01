@@ -73,7 +73,7 @@ const CardCanciones = ({ id }) => {
                       <div className='flex justify-between  px-2 '>
                         <p className='font-Subtitulo'>
                           {
-                            Math.floor(cancion.duration_ms / 60000) + ':' + ((cancion.duration_ms % 60000) / 1000).toFixed(0).padStart(2, '0')
+                            Math.floor(cancion.duration_ms / 60000) + ':' + ((cancion.duration_ms % 60000) / 1000).toFixed(0).padStart(2, '0') + ' | play'
                           }
                         </p>
                         <p className="text-sm font-Subtitulo">popularidad: {cancion.popularity}/100</p>
