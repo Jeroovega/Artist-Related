@@ -8,7 +8,7 @@ const TokenContext = createContext()
 const TokenProvider = ({ children }) => {
     const [token, setToken] = useState('');
 
-    const url = 'https://artist-related.onrender.com/api/search'
+    const url = 'https://artistasrelated.onrender.com/api/search'
 
     const obtenerToken = async () => {
         try {
