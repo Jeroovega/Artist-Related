@@ -71,7 +71,7 @@ const CardAlbumes = ({ id }) => {
                     <div className="absolute bottom-0 left-0 right-0">
                       <div className="">
                         <div className="stat">
-                          <div className="stat-desc font-Subtitulo">{
+                          <div className="stat-desc font-Subtitulo text-white/70">{
                             // el nombre del artista, en caso de ser dos artistas se separa por un -
                             album.artists.length > 1 ? album.artists[0].name + ' - ' + album.artists[1].name : album.artists[0].name
                           }</div>
@@ -79,7 +79,7 @@ const CardAlbumes = ({ id }) => {
                             // el nombre del album, si es mayor a 20 caracteres se corta y se le agrega ...
                             album.name.length > 13 ? album.name.substring(0, 10) + '...' : album.name
                           }</div>
-                          <div className="stat-desc font-Subtitulo">{
+                          <div className="stat-desc font-Subtitulo text-white/70">{
                             // fecha de lanzamiento del album
                             album.release_date
                           }</div>
