@@ -46,7 +46,7 @@ const CardAlbumes = ({ id }) => {
     <div className='w-[100%]'>
       <div className='font-Titulo pb-5 mt-12 text-white/80 border-white/50 border-b-2'>ALBUMES</div>
 
-      <div className='md:flex md:justify-center pt-10'>
+      <div className='md:flex md:justify-center pt-10 text-white/70'>
         <div className='md:flex'>
           <button onClick={() => {
             document.getElementById('carousel').scrollLeft -= 400

@@ -2,4 +2,6 @@ html {
     background-image: url('/img/aa.webp');
     background-blend-mode: screen;
     background-attachment: fixed;
-}
+    background-position: center;
+  }
+  

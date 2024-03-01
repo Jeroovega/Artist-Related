@@ -18,8 +18,8 @@ const ResultadoRelacionado = () => {
     <div className="mt-10 pb-32 md:pb-0">
 
       <div className="flex items-center mb-4 gap-10" >
-        <div className='font-Titulo text-black/60 md:text-white/60'>Artista similar</div>
-        <div className="h-0.5 w-[50%] bg-black/60 md:bg-white/60 md:w-[70%]"></div>
+        <div className='font-Titulo text-white/70'>Artista similar</div>
+        <div className="h-0.5 w-[50%] bg-white/60 md:w-[70%]"></div>
       </div>
 
       <div className="flex flex-wrap justify-start gap-10  md:gap-28">
@@ -31,8 +31,8 @@ const ResultadoRelacionado = () => {
 
             artistsRelated.map((artista, key) => {
 
-              return <div key={key} className="card w-[70%] bg-black/40 shadow-xl flex cursor-default m-auto md:w-72 md:m-0 md:hover:bg-black/50 md:transition-all md: duration-500 text-white/70 ">
-                <figure className="h-[240px]">
+              return <div key={key} className="card w-[70%] bg-black/40 shadow-xl flex cursor-default m-auto md:w-72 md:m-0 md:hover:bg-black/50 md:transition-all md:duration-500 text-white/70 ">
+                <figure className="h-[240px] object-cover  ">
                   <Link to={`/artista-related/${artista.id}`} onClick={() => {
                     window.scrollTo(0, 0)
                   }}>

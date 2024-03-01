@@ -11,13 +11,13 @@ const Footer = () => {
             {
                 artistas.length > 0 || window.location.pathname.length > 2 ? <footer className="footer footer-center p-10 text-base-content rounded bottom-0 relative pt-10 bg-[#1d232a]">
                     <div className="grid grid-flow-col gap-4 ">
-                        <Link to={'/'} onClick={() => { setArtistas(''); setBusqueda(''); }} className="link link-hover">inicio</Link>
-                        <Link to={'/about'} className="link link-hover" onClick={() => {
+                        <Link to={'/'} onClick={() => { setArtistas(''); setBusqueda(''); }} className="link link-hover text-white/70">inicio</Link>
+                        <Link to={'/about'} className="link link-hover text-white/70" onClick={() => {
                             window.scrollTo(0, 0)
                         }}>about us</Link>
                     </div>
                     <div>
-                        <div className="grid grid-flow-col gap-4">
+                        <div className="grid grid-flow-col gap-4 text-white/70">
                             <Link to={'https://www.linkedin.com/in/jeronimo-vega-42375b196/'} target={'_blank'}>
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                                     className='fill-current'>
@@ -40,7 +40,7 @@ const Footer = () => {
                             </Link>
                         </div>
                     </div>
-                    <aside className='pb-16 md:pb-0'>
+                    <aside className='pb-16 md:pb-0 text-white/70'>
                         <div className='flex gap-10 '>
                             <img src="/img/logo.png" alt="logo" className="w-14 h-14 m-auto" />
                             <img src="/img/logo3.png" alt="logo" className="w-14 h-14 m-auto" />
