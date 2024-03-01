@@ -32,7 +32,7 @@ const ResultadoRelacionado = () => {
             artistsRelated.map((artista, key) => {
 
               return <div key={key} className="card w-[70%] bg-black/40 shadow-xl flex cursor-default m-auto md:w-72 md:m-0 md:hover:bg-black/50 md:transition-all md:duration-500 text-white/70 ">
-                <figure className="h-[240px] object-cover  ">
+                <figure>
                   <Link to={`/artista-related/${artista.id}`} onClick={() => {
                     window.scrollTo(0, 0)
                   }}>

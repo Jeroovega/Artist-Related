@@ -33,7 +33,7 @@ const ResultadoPrincipal = () => {
                     window.scrollTo(0, 0)
                   }}>
                     <img src={
-                      artista.images ? artista.images[0].url : 'https://www.eltiempo.com/files/image_640_428/uploads/2019/08/30/5d68f3e3e9b3d.jpeg'
+                      artista.images ? artista.images[0].url : '/img/profilepicture.jpeg'
                     } alt="Shoes" className=" h-full w-full object-cover" />
                   </Link>
                 </figure>
